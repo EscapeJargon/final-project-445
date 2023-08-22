@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+import { GoogleLogin } from "react-google-login";
 
 const Login = () => {
+  const resgoo = (res) => {
+    console.log(res);
+  };
+
   return (
     <div className="pgbody">
       <h1>Login Page</h1>
@@ -11,6 +16,8 @@ const Login = () => {
         Post" which will allow them to navigate to the NewPostPage. There they
         will have the ability to create a brand new post to the system.
       </p>
+
+      <GoogleLogin />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config({ path: __dirname + "/.env" });
-const mongoose = require("mongoose");
-const uri = process.env["MONGO_URI"];
-const port = process.env["PORT"];
+const mongoose = require.mongoose;
+const uri = process.env.MONGO_URI;
+const port = process.env.PORT;
 const app = express();
 app.use(cors()); // Enable CORS for all routes
 
